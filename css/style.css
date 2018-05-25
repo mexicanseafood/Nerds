@@ -55,12 +55,12 @@ header {
 	text-transform: uppercase;
 }
 
-.logo:focus,
-.logo:hover {
+.main-header-logo:focus,
+.main-header-logo:hover {
 	opacity: 0.8;
 }
 
-.logo:active {
+.main-header-logo:active {
 	opacity: 0.3;
 }
 
@@ -85,6 +85,10 @@ header {
 .cart-navigation a:active {
 	color: #000000;
 	opacity: 0.3;
+}
+
+.slider {
+	background-color: #eeeeee;
 }
 
 .slider b{
@@ -221,6 +225,16 @@ header {
 
 .partners-list a:active {
 	opacity: 0.1;
+}
+
+.footer-top {
+	background-image: url("../img/map-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+}
+
+.footer-contacts {
+	background-color: #ffffff;
 }
 
 .footer-contacts p:first-child {
@@ -455,3 +469,151 @@ header {
 	border: 3px solid #dbdbdb;
 }
 
+/* Сеточные стили */
+
+html,
+body {
+	min-height: 2476px;
+	min-width: 1440
+}
+
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+header {
+	width: 100%;
+	min-height: 115px;
+	padding: 0;
+	margin: 0;
+}
+
+.main-navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 50px;
+}
+
+.main-header-logo {
+	width: 160px;
+	height: 65;
+	margin-right: 200px;
+}
+
+.site-navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 440px;
+}
+
+.cart-navigation {
+	margin-left: auto;
+}
+
+.slider-color {
+	width: 100%;
+}
+
+.slider-1 {
+	width: auto;
+	min-height: 410px;
+}
+
+.services {
+	margin-top: 85px;
+	min-height: 510px;
+	display: flex;
+}
+
+.service-item {
+	margin-right: 100px;
+	width: 300px;
+	height: 350px;
+}
+
+.service-item-3 {
+	margin-right: 0;
+}
+
+.studio {
+	display: flex;
+	justify-content: space-between;
+	height: 490px;
+	margin-top: 45px;
+}
+
+.index-column-1 {
+	width: 660px;
+}
+
+.index-column-2 {
+	width: 360px;
+}
+
+.partners {
+	height: 185px;
+}
+
+.partners-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-top {
+	height: 420px;
+
+}
+
+.footer-contacts {
+	display: inline-block;
+	width: 320px;
+	height: 310px;
+	margin-top: 55px;
+	margin-bottom: 55px;
+}
+
+.footer-social {
+	display: flex;
+	margin-top: 70px;
+}
+
+.social-buttons {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	order: -1;
+	margin-right: 140px;
+	width: 260px;
+	display: flex;
+	align-items: center;
+}
+
+.h1-wrapper {
+	width: 100%;
+	min-height: 240px;
+	background-color: #eeeeee;
+}
+
+.catalog-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.catalog-column-1 {
+	width: 260px;
+}
+
+.catalog-column-2 {
+	width: 760px;
+}
