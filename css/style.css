@@ -291,6 +291,8 @@ footer {
 }
 
 .footer-top {
+	position: relative;
+
 	height: 420px;
 	margin: 0;
 	margin-top: 80px;
@@ -301,11 +303,21 @@ footer {
 	background-position: 50% 0%;
 }
 
-.footer-contacts {	
+iframe {
+	position: absolute;
+}
+
+.footer-contacts-wrapper {
+	position: relative;
+}
+
+.footer-contacts {
 	display: inline-block;
 
 	position: absolute;
-	
+	top: 0;
+	left: 0;
+
 	width: 320px;
 	height: 310px;
 	margin-top: 55px;
