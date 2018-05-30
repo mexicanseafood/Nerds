@@ -24,6 +24,7 @@ a {
 	padding: 0 20px;
 }
 
+
 .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); 
@@ -302,6 +303,8 @@ footer {
 
 .footer-contacts {	
 	display: inline-block;
+
+	position: absolute;
 	
 	width: 320px;
 	height: 310px;
@@ -1106,4 +1109,146 @@ footer {
 	background-color: #ffffff;
 	outline: 3px solid #dbdbdb;
 	outline-offset: -3px;
+}
+
+
+
+/* Стили для модальных окон */
+
+.modal {
+	position: fixed;
+
+	display: none;
+	
+	background-color: #ffffff;
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-show {
+	display: block;
+
+	animation-name: bounce;
+	animation-duration: 0.6s;
+}
+
+.modal-error {
+	animation-name: shake;
+	animation-duration: 0.2s;
+}
+
+.modal-contact-form {
+	top: 120px;
+	left: 50%;
+
+	width: 960px;
+	height: 590px;
+	margin-left: -480px;
+	padding: 0 100px;
+
+	box-sizing: border-box;
+}
+
+.modal-contact-form h2 {
+	margin: 0;
+	margin-top: 70px;
+}
+
+.modal-contact-form fieldset {
+
+	margin: 0;
+	margin-top: 45px;
+	padding: 0;
+}
+
+.modal-contact-form label {
+	display: inline-block;
+}
+
+.contact-form label:first-child {
+	margin-right: 36px;
+}
+
+.contact-form label:nth-child(3) {
+	margin-top: 25px;
+}
+
+.contact-form legend {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.contact-form input[type=text] {
+	box-sizing: border-box;
+	font: inherit;
+
+	width: 360px;
+	padding: 15px 10px;
+
+	border: 2px solid #d7dcde;
+}
+
+.contact-form textarea {
+	font: inherit;
+	box-sizing: border-box;
+
+	width: 760px;
+	height: 115px;
+	padding: 15px 10px;
+
+	border: 2px solid #d7dcde;
+}
+
+.modal-button {
+	margin-top: 35px;
+}
+
+.modal-close {
+	position: absolute;
+	top: 80px;
+	right: 90px;
+
+	width: 22px;
+	height: 22px;
+
+	font-size: 0;
+
+	background-color: transparent;
+	border: 0;
+
+	cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+	content: "";
+
+	position: absolute;
+	top: 10px;
+	left: 2px;
+
+	width: 21px;
+	height: 4px;
+
+	background-color: #fecccd;
+}
+
+.modal-close::before {
+	transform: rotate(45deg);
+}
+
+.modal-close::after {
+	transform: rotate(-45deg);
+}
+
+@keyframes bounce {
+	0%   {transform: translateY(-2000px); }
+	70%  {transform: translateY(30px);	  }
+	90%  {transform: translateY(-10px);   }
+	100% {transform: translateY(0px);	  }
+}
+
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+	30% {transform: translateX(-10px);}
+	60% {transform: translateX(10px);}
 }

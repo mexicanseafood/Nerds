@@ -205,7 +205,7 @@
 					<p>
 						тел. +7 (812) 275-75-75
 					</p>
-					<button class="button" type="submit">Напишите нам</button>
+					<button class="button modal-open"" type="submit">Напишите нам</button>
 				</div>
 			</div>
 			<img class="visually-hidden" src="img/map.jpg" width="1140px" height="416px" alt="адрес офиса компании Нёрдс по улице б. Конюшенная, д. 19/8">
@@ -233,6 +233,28 @@
 						</a></li>
 				</ul>
 			</div>
-	</footer>S
+	</footer>
+	<section class="modal modal-contact-form">
+		<h2>Напишите нам</h2>
+		<form class="contact-form" method="post" action="#">
+			<fieldset>
+				<label>
+					<legend>Ваше имя:</legend>
+					<input class="modal-contact-info-name" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+				</label>
+				<label>
+					<legend>Ваш email:</legend>
+					<input class="modal-contact-info-mail" type="text" name="mail" id="mail" placeholder="Для отправки ответа">
+				</label>
+				<label>
+					<legend>Текст письма:</legend>
+					<textarea class="modal-contact-letter" name="letter" id="letter" placeholder="В свободной форме"></textarea>
+				</label>
+			</fieldset>
+			<button class="modal-button button" type="submit">Отправить</button>
+			<button class="modal-close" type="button">Закрыть</button>
+		</form>
+	</section>
+	<script type="text/javascript" src="js/popup.js"></script>
 </body>
 </html>
